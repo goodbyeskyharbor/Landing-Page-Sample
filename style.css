@@ -50,7 +50,7 @@ a{
     flex: 1;
 }
 
-.left-box{
+.rect1 .left-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,9 +58,9 @@ a{
     flex: 1;
 }
 
-.right-box{
+.rect1 .right-box{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
     flex: 2;
@@ -75,7 +75,7 @@ a{
 .rect1 img{
     border-radius: 25px;
     background-color: #1F2937;
-    width: 600px;
+    width: 300px;
 }
 
 p{
@@ -122,6 +122,10 @@ p{
 
 .card{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 .card-text{
@@ -144,7 +148,6 @@ p{
     font-style: italic;
     font-weight: 300;
     color: #1F2937;
-    display: flex;
 }
 
 .author{
@@ -177,14 +180,14 @@ p{
 .rect4 .left-box{
     color: #E5E7EB;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    flex: 8;
 }
 
 .rect4 .right-box{
     display: flex;
     justify-content: flex-end;
-    flex: 1;
+    align-items: center;
 }
 
 .rect4 .sign-up-button{
@@ -197,7 +200,6 @@ p{
     color: white;
     border-color: white;
     border-width: 1px;
-    flex-shrink: 0;
 }
 
 .banner-title{
