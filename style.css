@@ -1,4 +1,5 @@
 body{
+    font-family: 'Roboto';
     height: 200vh;
     margin: 0;
     padding: 0;
@@ -23,7 +24,7 @@ a{
 .header{
     background-color: #1F2937;
     margin: 0;
-    padding: 32px 256px;
+    padding: 32px 320px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +44,8 @@ a{
 
 .rect1{
     background-color: #1F2937;
-    padding: 32px 256px;
+    margin: 0;
+    padding: 32px 320px;
     display: flex;
     flex: 1;
 }
@@ -58,13 +60,22 @@ a{
 
 .right-box{
     display: flex;
-    flex: 1;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 2;
 }
 
-.rect-title{
+.left-box .rect-title{
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
+}
+
+.rect1 img{
+    border-radius: 25px;
+    background-color: #1F2937;
+    width: 600px;
 }
 
 p{
@@ -74,36 +85,134 @@ p{
 
 .rect1 .sign-up-button{
     margin: 0;
-    padding: 0 18px;
+    padding: 7px 23px;
     font-size: 18px;
     background-color: #3882F6;
     border: 12px solid #3882F6;
     border-radius: 12px;
+    border-width: 1px;
     color: white;
 }
 
-.rect2{
-    padding: 32px 256px;
+.rect2 .title{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.listings{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.rect2{
+    padding: 32px 416px;
     flex: 1;
+}
+
+.rect2 img{
+    border-radius: 25px;
+    background-color: white;
+    max-width: 200px;
+}
+
+.card{
+    text-align: center;
+}
+
+.card-text{
+    color: #1F2937;
 }
 
 .rect3{
-    padding: 32px 256px;
+    padding: 32px 416px;
     background-color: #E5E7EB;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex: 1;
 }
 
-.rect4{
-    padding: 32px 256px;
+.testimonial{
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1F2937;
     display: flex;
+}
+
+.author{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 900;
+    color: #1F2937;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rect4{
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
+}
+
+.horizontal-banner{
+    margin: 0;
+    padding: 32px 128px;
+    background-color: #3882F6;
+    border-radius: 16px;
+    display: flex;
+    gap: 128px;
+}
+
+.rect4 .left-box{
+    color: #E5E7EB;
+    display: flex;
+    justify-content: flex-start;
+    flex: 8;
+}
+
+.rect4 .right-box{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.rect4 .sign-up-button{
+    margin: 0;
+    padding: 7px 23px;
+    font-size: 24px;
+    background-color: #3882F6;
+    border: 12px solid #3882F6;
+    border-radius: 12px;
+    color: white;
+    border-color: white;
+    border-width: 1px;
+    flex-shrink: 0;
+}
+
+.banner-title{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.banner-text{
+    font-size: 24px;
 }
 
 .footer{
     background-color: #1F2937;
-    padding: 32px 256px;
+    color: #E5E7EB;
+    padding: 32px 320px;
     display: flex;
     justify-content: center;
     align-items: space-evenly;
